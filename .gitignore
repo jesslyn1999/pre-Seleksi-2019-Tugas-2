@@ -1,21 +1,32 @@
-# Java
-*.class
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
-# IntelliJ
-*.iml
-.idea/
-.settings/
-
-# maven
-target/
-
-# Eclipse files
-.project
+### STS ###
+.apt_generated
 .classpath
+.factorypath
+.project
 .settings
+.springBeans
+.sts4-cache
 
-# Package Files
-*.jar
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
 
-# VS Code
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
 .vscode/
