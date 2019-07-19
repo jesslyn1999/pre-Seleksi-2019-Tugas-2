@@ -1,47 +1,12 @@
 # Data Scrapping in Java 
 
 ## Description
-Data scraping is done using the assist from Jsoup and Jackson. Jsoup will convert the URL given into the the document of HTML parser. The information will be stored as an object. By using Jackson, this object will then be mapped into a form of json. 
+Another version of this <a href = "https://github.com/jesslyn1999/Seleksi-2019-Tugas-1.git">repository</a>, though the improvisations are done by using gradle build tools, Lombok plugins and spring framework. The collected data is changed to the data provided by <a href = "https://newsapi.org/">News Api</a> service instead of html parsing.
 
-## Setup
-Install [Maven](http://maven.apache.org/).
+<p>
+<br>References for the REST API: https://newsapi.org/docs/endpoints/everything
+</p>
 
-Build your project with:
-
-```
-mvn clean package
-```
-
-## Request Json file
-```
-mvn exec:java -DHttpRequest -Dexec.args="https://www.kompas.com/"
-```
-
-## JSON Structure
-[{
-<br>  "title" : string,
-<br>  "dateInfo" : string,
-<br>  "category" : string,
-<br>  "imgHref" : string,
-<br>  "imgSrc" : string
-<br>},
-<br>...
-<br>]
-
-## Screenshots
-![Screenshot](./screenshots/compile.PNG)
-![Screenshot](./screenshots/run.PNG)
-![Screenshot](./screenshots/data.PNG)
-
-## Reference
-The libraries used :
-- <a href = "https://jsoup.org/">Jsoup</a>
-- <a href = "https://en.wikipedia.org/wiki/Jackson_(API)">Jackson</a>
-- HttpsURLConnection
-
-## Next Improvitation
-- The current source code supported web scrapping only from https://www.kompas.com. It is expected to be able to retrieve data from any URL in the next version.
-- JUnit testing will be added.  
 
 ## Author
 <p align="center">
